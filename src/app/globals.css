@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+
+
+
+/* === ISLAMIC GREEN & WHITE THEME === */
+@theme {
+    --color-green-900: #0A2F1A;   /* Deep mosque green – for dark backgrounds or header bars */
+    --color-green-800: #104527;   /* Rich forest green – for section backgrounds */
+    --color-green-700: #166534;   /* Balanced deep green – for content areas */
+    --color-green-600: #1F7A40;   /* Medium bright green – for hover states or accents */
+    --color-green-500: #9DBFA7;   /* Muted pastel green – for soft text or dividers */
+    --color-green-400: #E9F4ED;   /* Light mint white – for subtle background contrast */
+  
+    --color-green-main: #0BA14B;   /* Primary Islamic green – logo or main brand color */
+    --color-green-accent: #37D07C; /* Light vibrant green – hover or accent details */
+    --color-gold-400: #DDBB45;     /* Warm gold – symbolizes light, wisdom, and divinity */
+    --color-gold-500: #C9A635;     /* Deep gold – for headings or icons with spiritual tone */
+    --color-teal-400: #6EE7B7;     /* Refreshing mint teal – soft secondary highlight */
+    --color-red-500: #D64545;      /* Calm red – for alerts or important messages */
+  
+    --color-white: #FFFFFF;        /* Pure white – main background */
+    --color-offwhite: #F8FAF9;     /* Soft white – alternate background sections */
+  }
+  
+
+@layer utilities {
+    .container {
+        @apply mx-auto max-w-screen-2xl px-4 md:px-6 lg:px-8;
+      }
+      .home-wrapper {
+        @apply text-gold-400 flex-col gap-4 md:gap-10 items-center sm:items-start;
+      }
+      .home-section {
+        @apply w-full gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3;
+      }
+      .header {
+        @apply z-50 w-full h-[70px] bg-green-900;
+      }
+      .header-wrapper {
+        @apply flex justify-between items-center px-6 py-4 text-gold-400;
+      }
+}
